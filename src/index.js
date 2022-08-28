@@ -16,7 +16,7 @@ function App({children}) {
       <main>
         {children}
       </main>
-      {/* <Aside /> */}
+      <Aside />
       <Footer />
     </div>
   )
