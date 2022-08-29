@@ -8,7 +8,7 @@ function Header() {
         <p id="menuBtn"><span></span><span></span><span></span></p>
         <h1>
           <a href="#">
-            <img src="./image/logo.png" alt="모찌타운" />
+            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="모찌타운" />
           </a>
         </h1>
         <nav>

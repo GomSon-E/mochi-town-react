@@ -9,6 +9,8 @@ import Footer from './Components/Footer';
 import Shop from './Pages/Shop';
 import Review from './Pages/Review';
 
+import './css/index.css'
+
 function App({children}) {
   return (
     <div id='wrap'>

@@ -2,6 +2,8 @@ import React, {useState, useEffect, useCallback} from "react";
 
 import Products from "../Components/Products"
 
+import '../css/shop.css'
+
 function Shop() {
 
   // 데이터 가져오기
@@ -26,8 +28,8 @@ function Shop() {
 
   function ProductOrder() {
     return (
-      <ul>
-        <li onClick={() => {setOrderBy("name"); setIsAsc(true);}}>상품명</li>
+      <ul id="productOrder">
+        <li className="clicked" onClick={() => {setOrderBy("name"); setIsAsc(true);}}>상품명</li>
         <li onClick={() => {setOrderBy("date"); setIsAsc(false);}}>신상품</li>
         <li onClick={() => {setOrderBy("likes"); setIsAsc(false);}}>인기상품</li>
         <li onClick={() => {setOrderBy("ins"); setIsAsc(true);}}>낮은가격</li>
@@ -51,13 +53,13 @@ function Shop() {
         </div>
       </header>
 
-      <div className="content_wrap">
+      <div id="characterProduct">
 
         <h3>캐릭터 상품</h3>
 
         <ProductOrder />
 
-        <ul>
+        <ul className="content_wrap">
           {
             orderProducts.map(
               (product) => {return (<Products key={product.id} product={product} /> )})
