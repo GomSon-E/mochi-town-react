@@ -92,6 +92,10 @@ figure.productList>img {
   margin-bottom: 20px;
 }
 
+figure.productList>img:hover {
+  filter: brightness(80%);
+}
+
 figure.productList>figcaption dt {
   font-size: 12px;
   line-height: 18px;

@@ -29,11 +29,16 @@ function Shop() {
   function ProductOrder() {
     return (
       <ul id="productOrder">
-        <li className="clicked" onClick={() => {setOrderBy("name"); setIsAsc(true);}}>상품명</li>
-        <li onClick={() => {setOrderBy("date"); setIsAsc(false);}}>신상품</li>
-        <li onClick={() => {setOrderBy("likes"); setIsAsc(false);}}>인기상품</li>
-        <li onClick={() => {setOrderBy("ins"); setIsAsc(true);}}>낮은가격</li>
-        <li onClick={() => {setOrderBy("ins"); setIsAsc(false);}}>높은가격</li>
+        <li className={`${orderBy === 'name' && 'clicked'}`}
+            onClick={() => {setOrderBy("name"); setIsAsc(true);}}>상품명</li>
+        <li className={`${orderBy === 'date' && 'clicked'}`}
+            onClick={() => {setOrderBy("date"); setIsAsc(false);}}>신상품</li>
+        <li className={`${orderBy === 'likes' && 'clicked'}`}
+            onClick={() => {setOrderBy("likes"); setIsAsc(false);}}>인기상품</li>
+        <li className={`${orderBy === 'ins' && 'clicked'}`}
+            onClick={() => {setOrderBy("ins"); setIsAsc(true);}}>낮은가격</li>
+        <li className={`${orderBy === 'ins' && 'clicked'}`}
+            onClick={() => {setOrderBy("ins"); setIsAsc(false);}}>높은가격</li>
       </ul>
     )
   }
