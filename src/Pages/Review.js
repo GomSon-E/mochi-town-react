@@ -27,6 +27,18 @@ function Review() {
 
   return (
     <article>
+
+      {/* header */}
+      <header>
+        <div>
+          <h3>상품 사용후기</h3>
+          <p>
+            상품 사용후기 남기고 <br />
+            적립금 받아가세요
+          </p>
+        </div>
+      </header>
+
       <h3>상품 사용후기</h3>
       <p>&hearts;모찌타운 회원 적립금지급&#40;포토 1,000원/ 텍스트 500원&#41;&hearts;</p>
 
