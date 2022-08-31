@@ -2,7 +2,7 @@
 
 /* header */
 
-article>header {
+#shop>header {
   height: 500px;
   margin-bottom: 85px;
   padding: 135px 0 70px;
@@ -10,7 +10,7 @@ article>header {
   background: linear-gradient(117deg, rgba(254,201,207,1) 50%, rgba(255,194,201,1) 75%);
 }
 
-article>header>div {
+#shop>header>div {
   width: 1100px;
   margin: 0 auto;
   padding-top: 140px;
@@ -18,14 +18,14 @@ article>header>div {
   background: url(./images/shop_header.jpg) no-repeat right top;
 }
 
-header>div>h3 {
+#shop>header>div>h3 {
   margin-bottom: 10px;
   font-size: 35px;
   line-height: 50px;
   color: #FFF;
 }
 
-header>div>p {
+#shop>header>div>p {
   font-size: 15px;
   line-height: 25px;
   color: #9A8E90;
@@ -33,20 +33,20 @@ header>div>p {
 
 /* Product */
 
-#characterProduct>h3 {
+#shop #characterProduct>h3 {
   margin-bottom: 90px;
   text-align: center;
   font-size: 25px;
 }
 
-ul#productOrder {
+#shop ul#productOrder {
   width: 1100px;
   margin: 0 auto 40px;
   border-bottom: 1px solid #000;
   text-align: right;
 }
 
-ul#productOrder>li {
+#shop ul#productOrder>li {
   display: inline-block;
   padding: 15px 25px;
   font-size: 13px;
@@ -55,20 +55,20 @@ ul#productOrder>li {
   color: #979797;
 }
 
-ul#productOrder>li:hover {
+#shop ul#productOrder>li:hover {
   border: 1px solid #000;
   border-bottom: none;
   color: #000;
 }
 
-ul#productOrder>li.clicked {
+#shop ul#productOrder>li.clicked {
   border: 1px solid #000;
   border-bottom: none;
   color: #000;
   font-weight: bold;
 }
 
-.content_wrap {
+#shop .content_wrap {
   width: 1100px;
   margin: 0 auto 180px;
   display: flex;
@@ -76,39 +76,39 @@ ul#productOrder>li.clicked {
   flex-wrap: wrap;
 }
 
-li.productWrap {
+#shop li.productWrap {
   position: relative;
 }
 
 /* figure.productList */
 
-figure.productList {
+#shop figure.productList {
   width: 260px; height: 360px;
   margin-bottom: 80px;
 }
 
-figure.productList>img {
+#shop figure.productList>img {
   width: 100%;
   margin-bottom: 20px;
 }
 
-figure.productList>img:hover {
+#shop figure.productList>img:hover {
   filter: brightness(80%);
 }
 
-figure.productList>figcaption dt {
+#shop figure.productList>figcaption dt {
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 15px;
   color: #555;
 }
-figure.productList>figcaption del {
+#shop figure.productList>figcaption del {
   display: block;
   font-size: 12px;
   margin-bottom: 8px;
   color: #555;
 }
-figure.productList>figcaption ins {
+#shop figure.productList>figcaption ins {
   display: block;
   font-size: 15px;
   text-decoration: none;
@@ -117,14 +117,14 @@ figure.productList>figcaption ins {
 
 /* ul.productBtns */
 
-ul.productBtns {
+#shop ul.productBtns {
   width: 100%;
   position: absolute;
   left: 15px; top: 215px;
   /* display: none; */
 }
 
-ul.productBtns li.productBtn {
+#shop ul.productBtns li.productBtn {
   display: inline-block;
   width: 33px; height: 33px;
   text-indent: -9999px;
@@ -133,19 +133,19 @@ ul.productBtns li.productBtn {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-ul.productBtns>li {
+#shop ul.productBtns>li {
   display: inline-block;
 }
 
-ul.productBtns>li:first-child {
+#shop ul.productBtns>li:first-child {
   position: absolute;
   left: 0; top: 50px;
 }
 
-ul.productBtns li.heart {
+#shop ul.productBtns li.heart {
   background-image: url(./images/heart.png);
 }
-ul.productBtns li.like {
+#shop ul.productBtns li.like {
   width: 66px;
   padding-left: 5px;
   background: url(./images/like.png) no-repeat left center;

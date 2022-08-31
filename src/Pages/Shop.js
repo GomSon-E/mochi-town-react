@@ -44,7 +44,7 @@ function Shop() {
   }
 
   return (
-    <article>
+    <article id="shop">
 
       {/* header */}
       <header>
