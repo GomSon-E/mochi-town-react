@@ -110,8 +110,9 @@ aside#buttons>p:first-child {
 
 /* aside - InfoBox */
 aside#infoBox {
+  clear: both;
   width: 1100px;
-  margin: 0 auto 30px;
+  margin: 250px auto 30px;
   display: flex;
 }
 aside#infoBox>section {
