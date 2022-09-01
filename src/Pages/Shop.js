@@ -58,20 +58,20 @@ function Shop() {
         </div>
       </header>
 
-      <div id="characterProduct">
+      <article id="shopMain">
 
         <h3>캐릭터 상품</h3>
 
         <ProductOrder />
 
-        <ul className="content_wrap">
+        <ul className="contentWrap">
           {
             orderProducts.map(
               (product) => {return (<Products key={product.id} product={product} /> )})
           }
         </ul>
 
-      </div>
+      </article>
       
     </article>
   )  
