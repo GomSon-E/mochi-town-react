@@ -35,9 +35,9 @@ function Shop() {
             onClick={() => {setOrderBy("date"); setIsAsc(false);}}>신상품</li>
         <li className={`${orderBy === 'likes' && 'clicked'}`}
             onClick={() => {setOrderBy("likes"); setIsAsc(false);}}>인기상품</li>
-        <li className={`${orderBy === 'ins' && 'clicked'}`}
+        <li className={`${(orderBy === 'ins' && isAsc) && 'clicked'}`}
             onClick={() => {setOrderBy("ins"); setIsAsc(true);}}>낮은가격</li>
-        <li className={`${orderBy === 'ins' && 'clicked'}`}
+        <li className={`${(orderBy === 'ins' && !isAsc) && 'clicked'}`}
             onClick={() => {setOrderBy("ins"); setIsAsc(false);}}>높은가격</li>
       </ul>
     )
