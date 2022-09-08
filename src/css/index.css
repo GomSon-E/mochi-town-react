@@ -43,6 +43,7 @@ header#top {
   padding: 20px 0;
   box-sizing: border-box;
   position: fixed;
+  z-index: 999;
 }
 header#top:hover {
   background-color: #fff;
