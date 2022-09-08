@@ -26,6 +26,7 @@ function WriteReview ({toggle, setToggle, lastId,onAddReview}) {
   function publishReview () {
     const newReview = {
       id: lastId + 1,
+      img: reviewData.img,
       product: reviewData.product,
       note: reviewData.note,
       date: moment().format('YYYY-MM-DD HH:mm')
@@ -46,11 +47,13 @@ function WriteReview ({toggle, setToggle, lastId,onAddReview}) {
         <li>
           <label htmlFor="reviewProduct">상품명</label>
           <select id="reviewProduct" defaultValue={"상품 선택"}
-            onChange={(event) => {setReviewData({...reviewData, product: event.target.value})}} >
+            onChange={(event) => {
+              const value = JSON.parse(event.target.value);
+              setReviewData({...reviewData, product: value.name, img: value.img})}} >
             <option disabled>상품 선택</option>
             {
               productList.map((product) => 
-                <option key={product.id} value={product.name}>{product.name}</option>)
+                <option key={product.id} value={JSON.stringify(product)}>{product.name}</option>)
             }
           </select>
         </li>

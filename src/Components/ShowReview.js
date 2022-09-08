@@ -1,7 +1,7 @@
 function Reviews ({review}) {
   return (
     <li>
-      <img className="img" src={`${process.env.PUBLIC_URL}/products/${review.product}.jpg`} alt={review.product} />
+      <img className="img" src={`${process.env.PUBLIC_URL}/products/${review.img}.jpg`} alt={review.product} />
       <dl>
         <dt className="product">{review.product}</dt>
         <dd className="date"><dfn>작성일 : </dfn>{review.date}</dd>

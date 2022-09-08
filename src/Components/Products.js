@@ -2,7 +2,7 @@ function Products({product}) {
   return (
     <li className="productWrap">
       <figure className="productList">
-        <img src={`${process.env.PUBLIC_URL}/products/${product.name}.jpg`} alt={product.name} />
+        <img src={`${process.env.PUBLIC_URL}/products/${product.img}.jpg`} alt={product.name} />
         <figcaption>
           <dl>
             <dt>{product.name}</dt>
