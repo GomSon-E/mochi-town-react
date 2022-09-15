@@ -1,7 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import $ from "jquery"
 
 function Header() {
+  $(window).on('scroll', function(){
+    const scroll = $('html, body').scrollTop()    
+    if (scroll > 0) { $('#main').css('backgroundColor', '#FFF') }
+    else { $('#main').css('backgroundColor', 'transparent') }
+  })
+
   return (
     <header id="main">
       <div>
