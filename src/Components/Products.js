@@ -13,6 +13,19 @@ function handleMouseLeave () {
   $('ul.productBtns', this).css('display', 'none')
 }
 
+function handleBtns (e) {
+  let num = Number($(e.target).text())
+
+  if ($(e.target).hasClass('clicked')) {
+    $(e.target).removeClass('clicked')    
+    $(e.target).text(num - 1)
+  } 
+  else {
+    $(e.target).addClass('clicked')
+    $(e.target).text(num + 1)
+  }  
+}
+
 function Products({product}) {
   return (
     <li className="productWrap">
@@ -34,11 +47,11 @@ function Products({product}) {
         onMouseEnter={handleMouseEnter}>
         <li>
           <ul>
-            <li className="productBtn cart">장바구니</li>
-            <li className="productBtn heart">관심상품</li>
+            <li className="productBtn cart" onClick={handleBtns}>장바구니</li>
+            <li className="productBtn heart" onClick={handleBtns}>관심상품</li>
           </ul>
         </li>
-        <li className="productBtn like">{product.likes}</li>
+        <li className="productBtn like" onClick={handleBtns}>{product.likes}</li>
       </ul>
     </li>
   )
