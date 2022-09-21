@@ -12,7 +12,6 @@ function Header() {
   return (
     <header id="main">
       <div>
-        <p id="menuBtn"><span></span><span></span><span></span></p>
         <h1>
           <a href="#!">
             <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="모찌타운" />
