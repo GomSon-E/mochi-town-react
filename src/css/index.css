@@ -71,6 +71,7 @@ nav>div#search>p.btn {
   width: 20px; height: 20px;
   position: absolute;
   right: 15px; top: 5px;
+  cursor: pointer;
 }
 
 /* aside - Buttons */
@@ -88,6 +89,7 @@ aside#buttons>p {
   font-size: 25px;
   font-weight: bolder;
   background-color: rgba(255,255,255,0.6);
+  cursor: pointer;
 }
 aside#buttons>p:first-child {
   margin-bottom: 10px;

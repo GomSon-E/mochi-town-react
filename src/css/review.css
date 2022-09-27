@@ -125,6 +125,7 @@
   padding: 7px 10px;
   background-color: #8C8C8C;
   color: #FFF;
+  cursor: pointer;
 }
 
 #searchReview>button {
